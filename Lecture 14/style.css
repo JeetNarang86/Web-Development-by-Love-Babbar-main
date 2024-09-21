@@ -1,0 +1,28 @@
+p{
+    font-style: italic;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+   font-weight: 300;
+   line-height: 30px;
+}
+
+#firstPara{
+    background-color: yellow;
+    color: brown;
+}
+
+#secondPara{
+    background-color: rgb(101, 107, 194);
+}
+
+#thirdPara{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.firstClass{
+    background-color: #c45959aa;
+}
+
+#fourthPara{
+    background-color: hsl(0, 26%, 31%);
+}

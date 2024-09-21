@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 70vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.header-container{
+    margin-bottom: 2.8rem;
+}
+
+.header-title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem   ;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-desc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+
+.main-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+}
+
+@media (min-width:865px){
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1280px){
+    .main-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1800px){
+    .main-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.card-container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 2px solid rgb(170, 164, 164);
+    border-radius: 8px;
+}
+
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 11rem;
+}
+
+@media (min-width:768px){
+    .card-image-container{
+       height: 16rem;
+    }
+}
+
+.card-image{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-container:hover .card-image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    
+}
+
+.card-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(41, 37, 37);
+    line-height: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.card-title:hover {
+    color: rgb(55, 55, 230);
+}
+
+.card-desc{
+    color: rgb(93, 84, 84);
+    font-size: 1rem;
+}
+
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar-container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(189, 179, 179);
+    border-radius: 50%;
+    background-color: #dedddd;
+}
+
+.author-info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.author-info-container span:nth-child(1) {
+    color: rgb(82, 82, 237); 
+}
+.author-info-container span:nth-child(2) {
+    color: rgb(211, 187, 187); 
+}
+
+.card-tag-container{
+    font-size: 0.8rem;
+    border: 1px solid rgb(76, 74, 74);
+    border-radius: 5px;
+    /* text-align: center; */
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    transition: all 200ms linear 0s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tag-container span{
+    color: rgb(109, 105, 105);
+    cursor: pointer;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.card-tag-container:hover{
+    transform: translatey(-5PX);
+}
+
+.card-tag-container span:hover{
+    color: black;
+}

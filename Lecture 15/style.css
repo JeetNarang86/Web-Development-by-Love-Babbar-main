@@ -1,0 +1,48 @@
+h1{
+    background-color: aquamarine;
+    /* border-style: solid;
+    border-color: brown;
+    border-width: 2px; */
+    /* border-top-left-radius: 5px; */
+    
+    /* border-bottom: 5px solid black; */
+    /* border-top: 5px solid black; */
+    border: solid black 3px;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+}
+
+span{
+    background-color: aquamarine;
+    border: solid black 3px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.firstPara{
+    border: solid black 3px;
+    border-radius: 5px;
+    background-color:blanchedalmond;
+    width: 400px;
+    padding: 10px 20px 30px 40px; /* 10px is top, 20px is right, 30px is bottom, 40px is left */
+    /* padding: 20px 40px; 20px is in Y-axis(Top and bottom) and 40px is X-axis(left and right) */
+    /* padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-right: 40px; */
+}
+
+.secondPara{
+    border: solid black 3px;
+    border-radius: 5px;
+    background-color: chocolate;
+    width: 400px;
+}
+
+.thirdPara{
+    width: 400px;
+    background-color: darkkhaki;
+    border: solid black 3px;
+    border-radius: 5px;
+}

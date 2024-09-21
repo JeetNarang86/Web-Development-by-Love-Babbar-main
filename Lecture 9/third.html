@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice 3</title>
+</head>
+<body>
+    <form>
+        <h2>Complex Form</h2>
+        <Fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br><br>
+
+            <label for="emailID">Email</label>
+            <input type="email" name="emailID" id="emailID">
+            <br><br>
+
+            <label for="phoneNumber">Phone</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+            <br><br>
+
+            <label for="DateOfBirth">Date of Birth</label>
+            <input type="date" name="DateOfBirth" id="DateOfBirth">
+            <br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <br><br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="US">United States of America</option>
+            </select>
+            <br><br>
+        </Fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="street">Street: </label>
+            <input type="text" name="street" id="street">
+            <br><br>
+
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city">
+            <br><br>
+
+            <label for="state">State: </label>
+            <input type="text" name="state" id="state">
+            <br><br>
+
+            <label for="zipCode">Zip Code: </label>
+            <input type="text" name="zipCode" id="zipCode">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information:</legend>
+            <label for="textarea"> Comments: </label>
+            <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <br><br>
+
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">I agree to the terms and conditions.</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
